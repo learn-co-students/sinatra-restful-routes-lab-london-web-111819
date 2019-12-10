@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/bmabey/database_cleaner.git
-  revision: 85767fa7011355049aa526ffa1f99c6972b98fbf
+  revision: b1046de59eea00e3e58d40c8a1fe3cb8b2d448ec
   specs:
     database_cleaner (1.8.0)
 
@@ -44,7 +44,7 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.13.0)
     mustermann (1.0.3)
-    nokogiri (1.10.5)
+    nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
     pry (0.12.2)
       coderay (~> 1.1.0)
@@ -125,4 +125,4 @@ DEPENDENCIES
   tux
 
 BUNDLED WITH
-   2.0.2
+   1.17.3

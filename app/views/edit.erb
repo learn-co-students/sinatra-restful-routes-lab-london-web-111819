@@ -1,0 +1,8 @@
+<p>The chosen item to edit is called <%= @recipy.name %>, which consists of <%= @recipy.ingredients %> and takes <%= @recipy.cook_time %> to prepare.
+<form method="post" action="/recipes/<%= @recipy.id %>">
+    <input name="_method" type="hidden" value="patch">
+    <input name="recipy[name]" type="text" value="<%= @recipy.name %>">
+    <input name="recipy[ingredients]" type="text" value="<%= @recipy.ingredients %>">
+    <input name="recipy[cook_time]" type="text" value="<%= @recipy.cook_time %>">
+    <button type="submit">Submit</button>
+</form>
