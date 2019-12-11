@@ -1,0 +1,7 @@
+<h1>This shows an individual recipe</h1>
+
+<div>Recipe Name: <%= @recipe.name %></div>
+<div>Ingredients: <%= @recipe.ingredients %></div>
+<div>Cook_time: <%= @recipe.cook_time %></div>
+
+<a href="/recipes/<%= @recipe.id %>/edit">Edit this recipe</a>

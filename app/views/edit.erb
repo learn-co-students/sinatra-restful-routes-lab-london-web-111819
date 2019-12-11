@@ -1,0 +1,15 @@
+<h1>Edit recipe details here</h1>
+
+<form method="post" action="/recipes/<%= @recipe.id %>/edit">
+    <input name="_method" id="hidden" type="hidden" value="patch"/>
+    <input name="recipe[name]" type="text" placeholder="Recipe Name..." value="<%=@recipe.name%>"/>
+    <input name="recipe[ingredients]" type="text" placeholder="Recipe Ingredients..." value="<%=@recipe.ingredients%>"/>
+    <input name="recipe[cook_time]" type="number" placeholder="Cook time..." value="<%=@recipe.cook_time%>"/>
+    <input type="submit" value="Update recipe"/>
+</form>
+<p>
+<form method="post" action="/recipes/<%= @recipe.id %>/delete">
+    <input name="_method" type="hidden" value="delete" />
+    <input type="submit" value="Delete recipe" style="background: red;" />
+</form>
+</p>
